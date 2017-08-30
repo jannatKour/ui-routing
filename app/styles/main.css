@@ -1,0 +1,70 @@
+.nav-pills a{
+  color: #e0b8bf;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration-color: green;
+}
+.nav-pills a:hover{
+  color: #565656;
+}
+.nav-pills a:active{
+  color: #565656;
+}
+h1{
+  text-align: center;
+  vertical-align: middle;
+}
+.outer-div{
+  padding: 100px;
+  align-content: center;
+}
+.inner-div{
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+}
+body{
+  background-color: #D7CEC7;
+}
+.panel{
+  background-color:#565656;
+  margin-bottom:0px;
+}
+.w3-container{
+  background-color: #76323F;
+}
+.sidemenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  background-color: #f1f1f1;
+}
+.option a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  height:100%;
+}
+
+/* Change the link color on hover */
+.option a:hover {
+  background-color: #555;
+  color: white;
+}
+.delivery{
+  display: flex;
+}
+.selection{
+  background-color : red;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  color: #b34d5f;
+  background-color:  #bfbfbf;
+}
+.active {
+  color: #c1717e;
+}

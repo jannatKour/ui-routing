@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="app/styles/main.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Routing Application</title>
+  </head>
+
+  <body ng-app="myApp">
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-body" >
+          <ul class="nav nav-pills pull-right grey">
+            <li role="presentation"><a ui-sref = "administrator">ADMINISTRATOR</a></li>
+            <li role="presentation"><a ui-sref = "hr">HR</a></li>
+            <li role="presentation"><a ui-sref = "employee">EMPLOYEE</a></li>
+          </ul>
+        </div><!-- panel-body-->
+      </div><!-- panel-default -->
+      <div ui-view=""></div>
+
+    </div><!--container-->
+
+    <div class="footer">
+      <!--Put a footer if required-->
+    </div>
+
+    <!-- scripts -->
+    <!-- node modules -->
+
+    <script src = "node_modules/angular/angular.min.js"></script>
+    <script src = "node_modules/jquery/dist/jquery.min.js"></script>
+    <script src = "node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <!-- Custom scripts -->
+    <script src = "app/app.module.js"></script>
+
+    <!-- Features -->
+
+    <!-- employee -->
+    <script src = "app/features/employee/employee.module.js"></script>
+    <script src = "app/features/employee/employee.route.js"></script>
+    <script src =  "app/features/employee/employee.controller.js"></script>
+
+    <!-- HR -->
+    <script src = "app/features/hr/hr.module.js"></script>
+    <script src = "app/features/hr/hr.route.js"></script>
+    <script src = "app/features/hr/hr.controller.js"></script>
+
+    <!-- admin -->
+    <script src = "app/features/administrator/administrator.module.js"></script>
+    <script src = "app/features/administrator/administrator.route.js"></script>
+    <script src = "app/features/administrator/administrator.controller.js"></script>
+
+    <!--directives-->
+
+    <!-- menu bar -->
+    <!--<script src = "app/common/directives/menu-bar/menu-bar.controller.js"></script>-->
+    <script src = "app/common/directives/menu-bar/menu.directive.js"></script>
+
+    <!-- Side menu -->
+    <script src = "app/common/directives/side-menu/side-bar.controller.js"></script>
+    <script src = "app/common/directives/side-menu/side-bar.directive.js"></script>
+
+    <!-- common storage service -->
+    <script src = "app/common/services/storage.service.js"></script>
+
+  </body>
+
+</html>
